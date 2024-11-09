@@ -78,10 +78,26 @@ namespace exploring_variables
             
             heroHealth -= (bossStrength / 2);
             Console.WriteLine(bossName + " charges " + heroName + " and hits for " + bossStrength / 2 + " damage!");
+            Console.WriteLine(heroName + " has " + heroHealth + " HP\n");
             Console.WriteLine(heroName + " has condition: bleeding");
+            Console.WriteLine(bossName + " has status: initiative");
             Console.WriteLine(minion1Name + " has status: inspired");
-            Console.WriteLine(minion2Name + " has status: inspired\n"+ minion2Name +" has condition: nausea");
+            Console.WriteLine(minion2Name + " has status: inspired\n"+ minion2Name +" has condition: anxiety\n");
 
+            Console.WriteLine(heroName + " catches " + bossName + " off guard with a counterattack, and hits for " + heroStrength + " damage!");
+            Console.WriteLine(heroName + " has condition: bleeding - minus 0.5HP");
+            heroHealth -= 0.5;
+            bossHealth -= heroStrength;
+            Console.WriteLine(heroName + " has " + heroHealth + " HP");
+            Console.WriteLine(bossName + " has " + bossHealth + " HP\n");
+            Console.WriteLine(minion2Name + " has condition: anxiety - " + minion2Name + " runs away!\n");
+
+            Console.WriteLine(minion1Name + " chases after " + minion2Name + ", leaving " 
+                + bossName + " alone...");
+            Console.WriteLine(bossName + " turns back to " + heroName + 
+                ", who bites their neck for " + heroStrength*1000 + " damage!\n");
+            Console.WriteLine(heroName + " KILLED the remaining opponent " + bossName);
+            Console.WriteLine(heroName + " wins! Viva la PigeonClan!");
 
 
 
