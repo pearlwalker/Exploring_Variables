@@ -73,6 +73,16 @@ namespace exploring_variables
             Console.WriteLine(minion2Name + ": " + minion2Health + "HP " + minion2Strength + "ATK");
             Console.WriteLine(minionRank + " - \"Durable, but scared of blood\"\n");
 
+            //FIGHT!
+            Console.WriteLine("FIGHT!\n");
+            
+            heroHealth -= (bossStrength / 2);
+            Console.WriteLine(bossName + " charges " + heroName + " and hits for " + bossStrength / 2 + " damage!");
+            Console.WriteLine(heroName + " has condition: bleeding");
+            Console.WriteLine(minion1Name + " has status: inspired");
+            Console.WriteLine(minion2Name + " has status: inspired\n"+ minion2Name +" has condition: nausea");
+
+
 
 
 
