@@ -34,30 +34,49 @@ namespace exploring_variables
             string minion2Name = "EMPTY";
 
             // |Stats|
-            int heroHealth = 24;
-            int heroStrength = 36; //health mid, strength high
-            int bossHealth = 44;
-            int bossStrength = 20; //health very high, strength mid
-            int minion1Health = 16;
-            int minion1Strength = 12; //mid stats
-            int minion2Health = 20;
-            int minion2Strength = 8; //health higher mid, stength low
+            double heroHealth = 6.0;
+            double heroStrength = 9.0;
+
+            double bossHealth = 11.0;
+            double bossStrength = 5.0; //health very high, strength mid
+
+            double minion1Health = 4.0;
+            double minion1Strength = 3.0; //mid stats
+            double minion2Health = 6.5;
+            double minion2Strength = 1.0; //health higher mid, stength low
 
 
             //Begin Code Instructions
-            
+
             //Names
             heroName = heroPrefix + heroSuffix;
             bossName = "Fruitstar";
             minion1Name = "Whitenose";
             minion2Name = "Caveflower";
 
-            //Introduce Characters
-            Console.Write("\"Oh make way for " + heroName + ", the apprentice named " + heroRank + "!\"\n");
-            Console.WriteLine("mocks " + bossName + ", the " + bossRank + ".");
-            Console.WriteLine(bossName + " is accompanied by " + minionRank + "s: " + 
+            //Initiate battle
+            Console.WriteLine(bossName + ", the " + bossRank + ", is accompanied by " + minionRank + "s: " +
                 minion1Name + " and " + minion2Name + ".");
+            Console.WriteLine(heroName + ", the " + heroRank + ", stands their ground...\n");
+
+            //View stats
+            Console.WriteLine("PREPARE FOR BATTLE:\n");
+            Console.WriteLine(heroName + ": " + heroHealth + "HP " + heroStrength + "ATK");
+            Console.WriteLine(heroRank + " - \"Brutal fighter that can take a hit\"\n");
+
+            Console.WriteLine(bossName + ": " + bossHealth + "HP " + bossStrength + "ATK");
+            Console.WriteLine(bossRank + " - \"Persuasive tank that packs a punch\"\n");
+
+            Console.WriteLine(minion1Name + ": " + minion1Health + "HP " + minion1Strength + "ATK");
+            Console.WriteLine(minionRank + " - \"Loyal, well-balanced soldier\"\n");
+
+            Console.WriteLine(minion2Name + ": " + minion2Health + "HP " + minion2Strength + "ATK");
+            Console.WriteLine(minionRank + " - \"Durable, but scared of blood\"\n");
+
+
+
+
 
         }
-    } 
+    }
 }
